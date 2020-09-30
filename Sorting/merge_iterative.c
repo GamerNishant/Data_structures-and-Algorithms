@@ -56,7 +56,7 @@ int merge(int* arr,int left,int mid,int right,int size)
 void mergeSort(int* arr,int size) 
 { 
    int curr_size;
-   int i;
+
    int left_start; 
    for (curr_size=1; curr_size<=size-1; curr_size = 2*curr_size) 
    { 
@@ -66,7 +66,7 @@ void mergeSort(int* arr,int size)
            int right_end = min(left_start + 2*curr_size - 1, size-1); 
            merge(arr, left_start, mid, right_end,size); 
        } 
-       for(i=0;i<size;i++)
+       for(int i=0;i<size;i++)
 	    {
 	    	printf("%d ",arr[i]);
 	    }
