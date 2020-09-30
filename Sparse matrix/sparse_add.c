@@ -100,7 +100,7 @@ Sparse Add_Sparse(Sparse a,Sparse b)
    c.nz=k;
    return(c);
 }
-
+/*Funtion to display the sparse matrices*/
 void Display_Sparse(Sparse e)
 {  int i;
    printf("Row\tcol\tvalue\n");
